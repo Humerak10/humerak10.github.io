@@ -1,18 +1,21 @@
+/* General Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Body Styling */
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  background-color: #f4f4f4;
+  background-color: #ffffff; /* White background */
   color: #333;
 }
 
+/* Header */
 header {
-  background-color: #333;
+  background-color: #4b0082; /* Deep Purple */
   color: #fff;
   padding: 1rem;
   text-align: center;
@@ -36,34 +39,89 @@ nav ul li a {
   text-decoration: none;
 }
 
-section {
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* About Me Section */
+#about {
+  background-color: #f8f3fc; /* Light Purple Background */
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 2rem;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#about h2 {
+  text-align: center;
+  color: #4b0082; /* Deep Purple for headings */
+  margin-bottom: 1.5rem;
+}
+
+#about p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+#about ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 1.5rem 0;
+}
+
+#about ul li {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #444;
+  margin-bottom: 0.5rem;
+}
+
+#about a {
+  color: #4b0082;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#about a:hover {
+  text-decoration: underline;
+}
+
+/* Projects Section */
+#projects {
   padding: 2rem;
   margin: 1rem auto;
   width: 80%;
-  background-color: #fff;
+  background-color: #ffffff; /* White Background */
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-h2 {
+#projects h2 {
   text-align: center;
   margin-bottom: 1rem;
+  color: #4b0082; /* Deep Purple */
 }
 
 .project-card {
   display: inline-block;
   width: 45%;
   margin: 1rem;
-  background-color: #e2e2e2;
+  background-color: #f8f3fc; /* Light Purple Background */
   padding: 1rem;
   border-radius: 8px;
   cursor: pointer;
   transition: all 0.3s ease;
   text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .project-card:hover {
-  background-color: #ddd;
+  background-color: #e9d8fd; /* Slightly darker purple */
 }
 
 .project-card img {
@@ -72,23 +130,58 @@ h2 {
   border-radius: 8px;
 }
 
+/* Project Info Section */
 #project-info {
   display: none;
   padding: 1rem;
-  background-color: #fff;
+  background-color: #ffffff; /* White Background */
   margin-top: 2rem;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#project-info h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #4b0082; /* Deep Purple */
 }
 
 #project-details {
   text-align: center;
 }
 
+#project-details img {
+  max-width: 400px;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+#project-details a {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #4b0082; /* Deep Purple Button */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+#project-details a:hover {
+  background-color: #371060; /* Darker Purple */
+}
+
+/* Footer */
 footer {
   text-align: center;
   margin-top: 2rem;
   padding: 1rem;
-  background-color: #333;
+  background-color: #4b0082; /* Deep Purple */
   color: #fff;
+}
+
+footer p {
+  margin: 0;
 }
