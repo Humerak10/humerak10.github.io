@@ -1,3 +1,7 @@
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
 <nav>
     <ul>
         <li><a href="#home">Home</a></li>
