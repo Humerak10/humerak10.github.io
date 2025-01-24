@@ -44,70 +44,62 @@ nav ul li a:hover {
 }
 
 /* About Me Section */
-/* About Me Section */
 #about {
-  background: linear-gradient(135deg, #6a0dad, #b19cd9); /* Gradient purple background */
+  background-color: #f9f9f9; /* Soft light gray for the background */
   padding: 2.5rem;
-  border-radius: 12px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Soft shadow */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
   margin-top: 2rem;
   width: 80%;
   margin-left: auto;
   margin-right: auto;
-  color: #ffffff; /* White text */
+  color: #333333; /* Dark gray for text */
 }
 
 #about h2 {
   text-align: center;
   font-size: 2rem;
-  color: #ffffff; /* White heading */
-  margin-bottom: 1.5rem;
-  text-transform: uppercase;
-  letter-spacing: 2px;
+  color: #4b0082; /* Deep purple for the heading */
+  margin-bottom: 1rem;
+  font-weight: 600;
+  border-bottom: 2px solid #ddd; /* Add a soft underline */
+  display: inline-block;
+  padding-bottom: 0.5rem;
 }
 
 #about p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   line-height: 1.8;
   margin-bottom: 1.5rem;
-  color: #f3e5f5; /* Soft light purple for text */
+  color: #555555; /* Medium gray for paragraphs */
   text-align: justify;
 }
 
 #about ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0 0 1.5rem 0;
+  list-style-type: disc; /* Disc bullet points */
+  padding-left: 1.5rem;
+  margin: 1.5rem 0;
 }
 
 #about ul li {
   font-size: 1rem;
   line-height: 1.6;
-  color: #e0c8f5; /* Softer purple for bullet points */
+  color: #444444; /* Slightly darker gray for list items */
   margin-bottom: 0.8rem;
-  display: flex;
-  align-items: center;
-}
-
-#about ul li::before {
-  content: "•"; /* Bullet point */
-  color: #fff;
-  font-size: 1.2rem;
-  margin-right: 10px;
 }
 
 #about a {
-  color: #ffccff; /* Light pink for links */
+  color: #4b0082; /* Deep purple for links */
   text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s ease;
+  font-weight: 600; /* Bold links for visibility */
+  border-bottom: 1px solid #4b0082; /* Subtle underline */
+  transition: all 0.3s ease;
 }
 
 #about a:hover {
-  color: #ffffff; /* White on hover */
-  text-decoration: underline;
+  color: #6a0dad; /* Softer purple on hover */
+  border-bottom: 1px solid #6a0dad; /* Match the hover color */
 }
-
 
 /* Projects Section */
 #projects {
