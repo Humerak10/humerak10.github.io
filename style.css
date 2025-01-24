@@ -106,42 +106,82 @@ nav ul li a:hover {
 
 /* Projects Section */
 #projects {
-  background-color: #f9f9f9;
-  padding: 2rem;
-  margin: 1rem auto;
+  padding: 2.5rem;
+  margin-top: 2rem;
   width: 80%;
+  margin-left: auto;
+  margin-right: auto;
   background-color: #ffffff; /* White Background */
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  color: #333333; /* Dark gray for text */
 }
 
 #projects h2 {
   text-align: center;
-  margin-bottom: 1rem;
+  font-size: 2rem;
   color: #4b0082; /* Deep Purple */
+  margin-bottom: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-bottom: 2px solid #ddd;
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
 }
 
 .project-card {
-  display: inline-block;
-  width: 45%;
-  margin: 1rem;
-  background-color: #f8f3fc; /* Light Purple Background */
-  padding: 1rem;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: all 0.3s ease;
+  background-color: #f9f9f9; /* Light gray background */
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-align: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .project-card:hover {
-  background-color: #e9d8fd; /* Slightly darker purple */
+  transform: translateY(-10px); /* Slight lift on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .project-card img {
   width: 100%;
   height: auto;
   border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.project-card h3 {
+  font-size: 1.5rem;
+  color: #4b0082; /* Deep Purple */
+  margin-bottom: 0.8rem;
+}
+
+.project-card p {
+  font-size: 1rem;
+  color: #555555; /* Medium gray */
+  margin-bottom: 1rem;
+}
+
+.project-card a {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #4b0082; /* Deep Purple Button */
+  color: #ffffff; /* White Text */
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.project-card a:hover {
+  background-color: #6a0dad; /* Softer Purple */
 }
 
 /* Project Info Section */
