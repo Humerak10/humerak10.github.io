@@ -44,28 +44,34 @@ nav ul li a:hover {
 }
 
 /* About Me Section */
+/* About Me Section */
 #about {
-  background-color: #f8f3fc; /* Light Purple Background */
-  padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(135deg, #6a0dad, #b19cd9); /* Gradient purple background */
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Soft shadow */
   margin-top: 2rem;
   width: 80%;
   margin-left: auto;
   margin-right: auto;
+  color: #ffffff; /* White text */
 }
 
 #about h2 {
   text-align: center;
-  color: #4b0082; /* Deep Purple for headings */
+  font-size: 2rem;
+  color: #ffffff; /* White heading */
   margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 #about p {
-  font-size: 1.1rem;
-  line-height: 1.6;
+  font-size: 1.2rem;
+  line-height: 1.8;
   margin-bottom: 1.5rem;
-  color: #333;
+  color: #f3e5f5; /* Soft light purple for text */
+  text-align: justify;
 }
 
 #about ul {
@@ -76,20 +82,32 @@ nav ul li a:hover {
 
 #about ul li {
   font-size: 1rem;
-  line-height: 1.5;
-  color: #444;
-  margin-bottom: 0.5rem;
+  line-height: 1.6;
+  color: #e0c8f5; /* Softer purple for bullet points */
+  margin-bottom: 0.8rem;
+  display: flex;
+  align-items: center;
+}
+
+#about ul li::before {
+  content: "•"; /* Bullet point */
+  color: #fff;
+  font-size: 1.2rem;
+  margin-right: 10px;
 }
 
 #about a {
-  color: #4b0082;
+  color: #ffccff; /* Light pink for links */
   text-decoration: none;
   font-weight: bold;
+  transition: color 0.3s ease;
 }
 
 #about a:hover {
+  color: #ffffff; /* White on hover */
   text-decoration: underline;
 }
+
 
 /* Projects Section */
 #projects {
