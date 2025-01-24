@@ -89,7 +89,7 @@ nav ul li a:hover {
 }
 
 #about a {
-  color: #4b0082; /* Deep purple for links */
+  color: #4b0082; 
   text-decoration: none;
   font-weight: 600; /* Bold links for visibility */
   border-bottom: 1px solid #4b0082; /* Subtle underline */
