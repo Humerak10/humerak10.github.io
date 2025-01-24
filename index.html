@@ -1,52 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navigation Bar -->
+  <header>
+    <h1>Your Name</h1>
     <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+      <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+      </ul>
     </nav>
+  </header>
 
-    <!-- Sections -->
-    <section id="home">
-        <h1>Welcome to My Portfolio</h1>
-        <p>Final-year BTech student specializing in mobile app development and more!</p>
-    </section>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello, I'm [Your Name], a [Your Role] passionate about technology and software development. I hold a [Your Degree] in [Your Field] from [Your University].</p>
+    <p>Contact: [Your Email]</p>
+  </section>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Details about your background, interests, and journey.</p>
-    </section>
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-card" onclick="displayProject('project1')">
+      <img src="project1-image.jpg" alt="Project 1">
+      <h3>Project 1</h3>
+    </div>
+    <div class="project-card" onclick="displayProject('project2')">
+      <img src="project2-image.jpg" alt="Project 2">
+      <h3>Project 2</h3>
+    </div>
+    <!-- Add more project cards as needed -->
+  </section>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <p>Technical and personal skills listed here.</p>
-    </section>
+  <section id="project-info">
+    <h2>Project Details</h2>
+    <div id="project-details"></div>
+  </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <p>Overview of your projects with descriptions and links.</p>
-    </section>
+  <footer>
+    <p>© 2025 [Your Name]. All rights reserved.</p>
+  </footer>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: example@example.com</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/example" target="_blank">Visit my LinkedIn</a></p>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 Your Name. All rights reserved.</p>
-    </footer>
+  <script src="script.js"></script>
 </body>
 </html>
